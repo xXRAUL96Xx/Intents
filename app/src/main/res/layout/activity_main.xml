@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.rauluem.intents.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abrir nueva pantalla"
+        android:id="@+id/buttonAbrir"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="nuevaPantalla" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:id="@+id/txtNombre"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="95dp"
+        android:layout_alignRight="@+id/buttonAbrir"
+        android:layout_alignEnd="@+id/buttonAbrir"
+        android:layout_alignLeft="@+id/buttonAbrir"
+        android:layout_alignStart="@+id/buttonAbrir" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EscribirNombre"
+        android:layout_below="@+id/txtNombre"
+        android:layout_alignLeft="@+id/txtNombre"
+        android:layout_alignStart="@+id/txtNombre"
+        android:layout_alignRight="@+id/txtNombre"
+        android:layout_alignEnd="@+id/txtNombre" />
+</RelativeLayout>
